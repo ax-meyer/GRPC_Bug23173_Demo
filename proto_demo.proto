@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package proto_demo;
+
+service DemoService{
+	rpc DemoCall(Empty) returns (Time);
+}
+
+message Empty{
+}
+message Time{
+    	int64 timestamp = 1;
+}
